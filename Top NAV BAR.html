@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Top Navigation Bar</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color:#19485F;
+        }
+        .navigation{
+            position: absolute;
+            top: 32px;
+            border-radius: 24px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background-color: #336371;
+            animation: Slidefromtop 0.5s ease-out ;
+            transform: translateX(0);
+        }
+        .navigation ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .navigation ul li{
+            height: 35px;
+            width: 35px;
+            padding:  0 1rem;
+            margin: 16px;
+            color: #F3F2C9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            border-radius: 50%;
+            
+        }
+        .navigation ul li:hover {
+            color: #336371;
+            transform: scale(1.2);
+            background-color: #F3F2C9;
+            border-radius: 50%;
+        }
+        img{
+            height: 20px;
+        }
+        @keyframes Slidefromleft {
+            from{
+                transform: translateX(-100%);
+            }
+            to{
+                transform: translateX(0) ;
+            }
+        }
+        @keyframes Slidefromtop {
+            from{
+                transform: translateY(-100%)
+                
+                
+            }
+            to{
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <link rel="image" href="chat.png">
+    <link rel="image" href="home.png">
+    <link rel="image" href="user.png">
+    <link rel="image" href="layout.png">
+    <link rel="image" href="online-shopping.png">
+    
+</head>
+<body>
+    <div id="main-container">
+        <nav class="navigation">
+            <ul title="Navigation Bar">
+                <li id="Home" title="Home"><a href="TNB HOME.html"><img src="home.png"> </a></li>
+                <li title="User"><img src="user.png"></li>
+                <li title="Gallery"><img src="layout.png"></li>
+                <li title="Contact"><img src="chat.png"></li>
+                <li title="Cart"><a href="TNB Carts.html"><img src="online-shopping.png"></li></a>
+                </ul>
+    </div>
+</body>
+</html>
